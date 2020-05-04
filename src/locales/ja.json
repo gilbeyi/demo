@@ -1,3 +1,14 @@
 {
-  "title": "タイトル"
+  "title": "タイトル",
+  "group": {
+    "tokyoKnowledge": {
+      "name": "TOKYO knowledge"
+    },
+    "newDonDon": {
+      "name": "ニュー呑呑"
+    },
+    "hahaha": {
+      "name": "KITCHEN & BAR ハハハ 浅草"
+    }
+  }
 }

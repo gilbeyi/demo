@@ -1,3 +1,14 @@
 {
-  "title": "title"
+  "title": "title",
+  "group": {
+    "tokyoKnowledge": {
+      "name": "TOKYO knowledge"
+    },
+    "newDonDon": {
+      "name": "New dondon"
+    },
+    "hahaha": {
+      "name": "KITCHEN & BAR Hahaha Asakusa"
+    }
+  }
 }

@@ -1,13 +1,13 @@
 <template>
-  <top-container />
+  <main-container />
 </template>
 
 <script>
-import TopContainer from '@/components/container/TopContainer.vue'
+import MainContainer from '@/components/container/MainContainer.vue'
 export default {
   name: 'MainPage',
   components: {
-    TopContainer
+    MainContainer
   }
 }
 </script>
