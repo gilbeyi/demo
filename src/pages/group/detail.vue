@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import GroupDetailContainer from '@/components/container/groups/GroupDetailContainer.vue'
+import GroupDetailContainer from '@/components/container/group/GroupDetailContainer.vue'
 export default {
   name: 'GroupDetailPage',
   components: {

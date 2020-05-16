@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import GroupDetail from '@/components/presentational/groups/GroupDetail.vue'
+import GroupDetail from '@/components/presentational/group/GroupDetail.vue'
 import { groupList } from '@/data/demoData.js'
 export default {
   name: 'GroupDetailContainer',

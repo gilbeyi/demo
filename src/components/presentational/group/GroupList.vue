@@ -27,7 +27,7 @@ export default {
       return this.$t(`group.${key}.name`)
     },
     goDetail (id) {
-      const path = `/groups/${id}`
+      const path = `/groups/${id}/detail`
       this.$router.push({ path: path })
     }
   }
