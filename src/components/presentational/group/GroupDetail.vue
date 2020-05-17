@@ -101,9 +101,13 @@ export default {
       position: absolute;
       left: 0;
       top: 0;
-      height: 100%;
-      width: 100%;
+      width: 600px;
+      height: 450px;
       border:0;
+      @include mq-down() {
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 }
