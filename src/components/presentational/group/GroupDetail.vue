@@ -22,13 +22,14 @@
         </a>
       </div>
       <div
+        v-if="group.map"
         class="group__map"
       >
         <div
           class="group__map--inner"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.6020103847372!2d139.79140871525956!3d35.711410280187266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ec0a6117f9d%3A0x718a747bf68936fd!2sTokyo%20Knowledge!5e0!3m2!1sja!2sjp!4v1589631759551!5m2!1sja!2sjp"
+            :src="group.map"
             frameborder="0"
             allowfullscreen=""
             aria-hidden="false"
@@ -54,9 +55,6 @@ export default {
   methods: {
     groupName (key) {
       return this.$t(`group.${key}.name`)
-    },
-    url (url) {
-      return `URL: ${url}`
     }
   }
 }
@@ -94,7 +92,10 @@ export default {
     &--inner {
       height: 0;
       overflow: hidden;
-      padding-bottom: 56.25%;
+      padding-bottom: 450px;
+      @include mq-down() {
+        padding-bottom: 56.25%;
+      }
       position: relative;
     }
     &--frame {
