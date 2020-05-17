@@ -4,12 +4,10 @@
       v-for="item in list"
       :key="item.id"
       class="group-list__item"
+      @click="goDetail(item.id)"
     >
       <div class="group-list__item--name">
         {{ groupName(item.name) }}
-      </div>
-      <div v-if="item.url">
-        {{ url(item.url) }}
       </div>
     </div>
   </div>
@@ -28,8 +26,9 @@ export default {
     groupName (key) {
       return this.$t(`group.${key}.name`)
     },
-    url (url) {
-      return `URL: ${url}`
+    goDetail (id) {
+      const path = `/groups/${id}/detail`
+      this.$router.push({ path: path })
     }
   }
 }
@@ -42,6 +41,7 @@ export default {
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #c9c9c9;
+    cursor: pointer;
     &--name {
       padding-bottom: 10px;
       font-size: 20px;

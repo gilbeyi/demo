@@ -6,9 +6,9 @@
 
 <script>
 import GroupList from '@/components/presentational/group/GroupList.vue'
-import { groupList } from './demoData.js'
+import { groupList } from '@/data/demoData.js'
 export default {
-  name: 'MainContainer',
+  name: 'GroupListContainer',
   components: {
     GroupList
   },
