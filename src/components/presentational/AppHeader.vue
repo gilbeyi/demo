@@ -3,6 +3,8 @@
     <div class="header__title">
       {{ $t("title") }}
     </div>
+    <div class="header__menu">
+    </div>
     <div class="header__option">
       <select
         v-model="selected"
@@ -48,18 +50,22 @@ export default {
 
 <style lang="scss" scoped>
 .header {
+  display: flex;
   height: 50px;
   padding: 5px 10px;
   border: 1px solid #c9c9c9;
   &__title {
-    display: inline-block;
+    width: 25%;
     font-size: 24px;
     font-weight: bold;
   }
+  &__menu {
+    width: 50%;
+  }
   &__option {
-    float: right;
-    width: 150px;
-    padding-top: 10px;
+    width: 20%;
+    padding: 10px;
+    text-align: right;
     &--select-box {
       font-size: 16px;
     }
